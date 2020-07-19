@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <div class="text-center">
+        <div class="row">
+            <div class="col">
+                Hello {{ request.session.client }} <a href="{% url 'login' %}">Log out</a>
+                {# In future we may add separate view to handle logging out and clearing session #}
+            </div>
+            <div class="col">
+                <a href="{% url 'restaurants' %}">Restaurants list</a>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="col"><h1>{{ object.name }}</h1></div>
+        </div>
+        <div class="row">
+            <div class="col">{{ object.image_tag }}</div>
+        </div>
+        {% include 'partials/rating.html' %}
+    </div>
+
+{% endblock %}

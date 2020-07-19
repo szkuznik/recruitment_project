@@ -1,0 +1,460 @@
+- model: restaurants.client
+  pk: 1
+  fields:
+    name: Adam
+- model: restaurants.client
+  pk: 2
+  fields:
+    name: Szymon
+- model: restaurants.client
+  pk: 3
+  fields:
+    name: Anna
+- model: restaurants.client
+  pk: 4
+  fields:
+    name: Marek
+- model: restaurants.client
+  pk: 5
+  fields:
+    name: Patryk
+- model: restaurants.client
+  pk: 6
+  fields:
+    name: Ewa
+
+
+- model: restaurants.address
+  pk: 1
+  fields:
+    country: Polska
+    city: Warszawa
+    street: Szkolna
+    number: 92
+- model: restaurants.address
+  pk: 2
+  fields:
+    country: Polska
+    city: Kraków
+    street: Ostatnia
+    number: 132
+- model: restaurants.address
+  pk: 3
+  fields:
+    country: Polska
+    city: Gdańsk
+    street: Szkolna
+    number: 45
+- model: restaurants.address
+  pk: 4
+  fields:
+    country: Polska
+    city: Warszawa
+    street: Główna
+    number: 67
+- model: restaurants.address
+  pk: 5
+  fields:
+    country: Polska
+    city: Kraków
+    street: Szkolna
+    number: 14
+- model: restaurants.address
+  pk: 6
+  fields:
+    country: Polska
+    city: Warszawa
+    street: Szkolna
+    number: 43
+- model: restaurants.address
+  pk: 7
+  fields:
+    country: Polska
+    city: Gdańsk
+    street: Ostatnia
+    number: 67
+- model: restaurants.address
+  pk: 8
+  fields:
+    country: Polska
+    city: Kraków
+    street: Ostatnia
+    number: 3
+- model: restaurants.address
+  pk: 9
+  fields:
+    country: Polska
+    city: Gdańsk
+    street: Główna
+    number: 34
+- model: restaurants.address
+  pk: 10
+  fields:
+    country: Polska
+    city: Warszawa
+    street: Szkolna
+    number: 12
+- model: restaurants.address
+  pk: 11
+  fields:
+    country: Polska
+    city: Kraków
+    street: Główna
+    number: 12
+- model: restaurants.address
+  pk: 12
+  fields:
+    country: Polska
+    city: Warszawa
+    street: Ostatnia
+    number: 5
+- model: restaurants.address
+  pk: 13
+  fields:
+    country: Polska
+    city: Gdańsk
+    street: Szkolna
+    number: 43
+- model: restaurants.address
+  pk: 14
+  fields:
+    country: Polska
+    city: Kraków
+    street: Główna
+    number: 31
+
+
+- model: restaurants.restaurant
+  pk: 1
+  fields:
+    address_id: 1
+    name: Resturacja
+    photo: /photos/1.jpg
+- model: restaurants.restaurant
+  pk: 2
+  fields:
+    address_id: 2
+    name: Resturacja druga
+    photo: /photos/2.jpg
+- model: restaurants.restaurant
+  pk: 3
+  fields:
+    address_id: 3
+    name: Resturacja trzecia
+    photo: /photos/3.jpg
+- model: restaurants.restaurant
+  pk: 4
+  fields:
+    address_id: 4
+    name: Resturacja czwarta
+    photo: /photos/4.jpg
+- model: restaurants.restaurant
+  pk: 5
+  fields:
+    address_id: 5
+    name: Resturacja piąta
+    photo: /photos/5.jpg
+- model: restaurants.restaurant
+  pk: 6
+  fields:
+    address_id: 6
+    name: Ładna restauracja
+    photo: /photos/6.jpg
+- model: restaurants.restaurant
+  pk: 7
+  fields:
+    address_id: 7
+    name: Nowa restuaracja
+    photo: /photos/7.jpg
+- model: restaurants.restaurant
+  pk: 8
+  fields:
+    address_id: 8
+    name: Resturacja ósma
+    photo: /photos/8.jpg
+- model: restaurants.restaurant
+  pk: 9
+  fields:
+    address_id: 9
+    name: Stara restuaracja
+    photo: /photos/9.jpg
+- model: restaurants.restaurant
+  pk: 10
+  fields:
+    address_id: 10
+    name: Resturacja w centrum
+    photo: /photos/10.jpg
+- model: restaurants.restaurant
+  pk: 11
+  fields:
+    address_id: 11
+    name: Nowoczesna restuaracja
+    photo: /photos/11.jpg
+- model: restaurants.restaurant
+  pk: 12
+  fields:
+    address_id: 12
+    name: Dwunasta restauracja
+    photo: /photos/12.jpg
+- model: restaurants.restaurant
+  pk: 13
+  fields:
+    address_id: 13
+    name: Ostatnia restuaracja
+    photo: /photos/13.jpg
+
+
+- model: restaurants.restaurantrating
+  pk: 1
+  fields:
+    client_id: 1
+    restaurant_id: 1
+    rating: 3
+    created_at: 2020-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 2
+  fields:
+    client_id: 2
+    restaurant_id: 1
+    rating: 5
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 3
+  fields:
+    client_id: 1
+    restaurant_id: 1
+    rating: 4
+    created_at: 2020-07-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 4
+  fields:
+    client_id: 3
+    restaurant_id: 1
+    rating: 2
+    created_at: 2020-04-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 5
+  fields:
+    client_id: 1
+    restaurant_id: 2
+    rating: 3
+    created_at: 2020-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 6
+  fields:
+    client_id: 2
+    restaurant_id: 2
+    rating: 5
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 7
+  fields:
+    client_id: 1
+    restaurant_id: 3
+    rating: 2
+    created_at: 2020-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 8
+  fields:
+    client_id: 5
+    restaurant_id: 3
+    rating: 1
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 9
+  fields:
+    client_id: 5
+    restaurant_id: 3
+    rating: 1
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 10
+  fields:
+    client_id: 1
+    restaurant_id: 4
+    rating: 5
+    created_at: 2020-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 11
+  fields:
+    client_id: 5
+    restaurant_id: 4
+    rating: 4
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 12
+  fields:
+    client_id: 5
+    restaurant_id: 4
+    rating: 5
+    created_at: 2019-03-16T17:41:28+00:00
+
+
+- model: restaurants.restaurantrating
+  pk: 12
+  fields:
+    client_id: 5
+    restaurant_id: 5
+    rating: 1
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 13
+  fields:
+    client_id: 3
+    restaurant_id: 5
+    rating: 1
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 14
+  fields:
+    client_id: 1
+    restaurant_id: 7
+    rating: 2
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 15
+  fields:
+    client_id: 3
+    restaurant_id: 7
+    rating: 3
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 16
+  fields:
+    client_id: 6
+    restaurant_id: 7
+    rating: 5
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 17
+  fields:
+    client_id: 5
+    restaurant_id: 8
+    rating: 4
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 18
+  fields:
+    client_id: 5
+    restaurant_id: 8
+    rating: 4
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 19
+  fields:
+    client_id: 5
+    restaurant_id: 8
+    rating: 3
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 20
+  fields:
+    client_id: 3
+    restaurant_id: 8
+    rating: 5
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 21
+  fields:
+    client_id: 2
+    restaurant_id: 8
+    rating: 5
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 22
+  fields:
+    client_id: 4
+    restaurant_id: 9
+    rating: 5
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 23
+  fields:
+    client_id: 5
+    restaurant_id: 9
+    rating: 2
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 24
+  fields:
+    client_id: 2
+    restaurant_id: 10
+    rating: 1
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 25
+  fields:
+    client_id: 2
+    restaurant_id: 10
+    rating: 5
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 26
+  fields:
+    client_id: 2
+    restaurant_id: 10
+    rating: 5
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 27
+  fields:
+    client_id: 2
+    restaurant_id: 10
+    rating: 5
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 28
+  fields:
+    client_id: 1
+    restaurant_id: 10
+    rating: 2
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 29
+  fields:
+    client_id: 6
+    restaurant_id: 11
+    rating: 3
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 30
+  fields:
+    client_id: 2
+    restaurant_id: 11
+    rating: 5
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 31
+  fields:
+    client_id: 5
+    restaurant_id: 4
+    rating: 5
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 32
+  fields:
+    client_id: 2
+    restaurant_id: 11
+    rating: 3
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 33
+  fields:
+    client_id: 1
+    restaurant_id: 11
+    rating: 5
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 34
+  fields:
+    client_id: 5
+    restaurant_id: 13
+    rating: 3
+    created_at: 2019-03-16T17:41:28+00:00
+- model: restaurants.restaurantrating
+  pk: 35
+  fields:
+    client_id: 6
+    restaurant_id: 13
+    rating: 3
+    created_at: 2019-03-16T17:41:28+00:00

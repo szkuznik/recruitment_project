@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <div class="text-center">
+
+        <div class="row">
+            <div class="col">
+                Hello {{ request.session.client }} <a href="{% url 'login' %}">Log out</a>
+                {# In future we may add separate view to handle logging out and clearing session #}
+            </div>
+            <div class="col">
+                <input id="search-input" placeholder="Search">
+            </div>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Rating</th>
+            <th>Photo</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for restaurant in object_list %}
+            <tr>
+                <td><a href="{% url 'restaurant_detail' restaurant.id %}">{{ restaurant.name }}</a></td>
+                <td>{{ restaurant.address }}</td>
+                <td>{{ restaurant.average_rating|default_if_none:"-" }}</td>
+                <td class="img-restaurant">{{ restaurant.image_tag }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <nav>
+        <ul class="pagination">
+            {% for i in paginator.page_range %}
+                <li class="page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+    <script>
+        $(function () {
+            $("#search-input").autocomplete({
+                source: '{% url 'restaurants' %}',
+                select: function (event, ui) {
+                    window.location.href = ui.item.id;
+                }
+            });
+        });
+    </script>
+{% endblock %}
